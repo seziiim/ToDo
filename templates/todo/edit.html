@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}{{ record.title }} {% endblock title%}
+{% block content %}
+
+<form action="{% url 'edit' record.id %}" method="POST">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Add task</label>
+        <input type="text" name="title" class="form-control" value="{{record.title}}" id="exampleFormControlInput1" placeholder="add...">
+    </div>
+    <div class="mb-3">
+        <input class="form-control" value="{{record.description}}" name="description"  id="exampleFormControlTextarea1" rows="3">
+    </div>
+    <button type="submit" class="btn btn-outline-dark">Add</button>
+</form>
+
+{% endblock content%}

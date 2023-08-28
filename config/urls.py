@@ -16,11 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from todo.views import main
+from todo.views import main, add, delete, edit
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
     # local
-     path('', main, name='main'),
+    path('', main, name='main'),
+    path('add/', add, name='create_record'),
+    path('delete/<int:pk>', delete, name='delete'),
+    path('edit/<int:pk>', edit, name='edit'),
+
 ]
