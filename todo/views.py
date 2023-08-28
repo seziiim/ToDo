@@ -34,3 +34,15 @@ def edit(request, pk):
         'record':record,
     }
     return render(request, 'todo/edit.html', context )
+
+def done(request, pk):
+    record = Record.objects.get(pk=pk)
+    if record.tasks_done:
+        record.tasks_done = False
+        record.save()
+    else:
+        record.tasks_done = True
+        record.save()
+
+    return HttpResponseRedirect ('/')
+    
