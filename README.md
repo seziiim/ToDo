@@ -49,6 +49,16 @@ Now your project is available at http://127.0.0.1:8000/
 
 ## Screenshots
 
+Main Page
+
+<img width="1497" alt="image" src="https://github.com/seziiim/ToDo/assets/96724618/6129ae73-3444-443e-a9e4-c123f7379898">
+
+Edit Page
+<img width="639" alt="image" src="https://github.com/seziiim/ToDo/assets/96724618/01046ab7-e926-48a4-9fcd-4d17753a1baf">
+
+Admin Page
+<img width="920" alt="image" src="https://github.com/seziiim/ToDo/assets/96724618/0c39e273-b07d-4ccc-a4f2-2b734f0e002b">
+
 
 
 
